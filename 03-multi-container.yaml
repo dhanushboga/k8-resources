@@ -5,4 +5,9 @@ metadata:
   labels:
     project: expense
     component: backend
-    
+spec:
+containers:
+  name: nginx
+  image: nginx
+
+  

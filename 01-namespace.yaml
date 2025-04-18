@@ -1,6 +1,6 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  Name: expense
+  name: expense
 
  
