@@ -14,6 +14,7 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 80
+    NodePort: 30007
     
 
 ---
@@ -21,7 +22,7 @@ spec:
 kind: Pod
 apiVersion: v1
 metadata:
-  name: backend-np
+  name: backend-lb
   labels:
     project: expense
     component: backend
