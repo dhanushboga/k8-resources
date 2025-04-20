@@ -13,3 +13,5 @@ spec:
        value: "siva"
      - name: duration
        value: "120HRS"
+     - name: learner
+       value: "dhanushboga"
