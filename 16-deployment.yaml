@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: dhanushboga/nginx
+        image: dhanushboga/nginx:1.0
         ports:
         - containerPort: 80
 
