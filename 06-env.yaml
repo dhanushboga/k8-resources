@@ -15,3 +15,5 @@ spec:
        value: "120HRS"
      - name: learner
        value: "dhanushboga"
+     - name: institute
+       value: "joindevops"
