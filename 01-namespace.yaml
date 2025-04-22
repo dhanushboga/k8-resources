@@ -1,6 +1,34 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: expense
+  name: elsevier
 
- 
+  labels:
+   environment: dev
+   project: elsevier
+   component: app
+
+   selectors:
+    environment: dev
+    project: elsevier
+    
+
+  annotations:
+    weburl: "https://journalfinder.elsevier.com/"
+
+---
+kind: Pod
+apiVersion: v1
+metadata:
+  name: elsevier-pod
+  Namespace: elsevier
+  labels:
+    environment: dev
+    project: elsevier
+   
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  
+  
