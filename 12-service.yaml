@@ -28,6 +28,6 @@ metadata:
 
 spec:
  containers:
- - name: almalinux
-   image: almalinux:9
+ - name: nginx
+   image: nginx
    
