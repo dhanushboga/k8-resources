@@ -2,7 +2,10 @@ kind: Pod
 apiVersion: v1
 metadata:
    name: nginx
-   namespace: expense
+   namespace: elsevier
+   labels:
+    component: dev
+    
 spec:
   containers:
   - name: nginx
