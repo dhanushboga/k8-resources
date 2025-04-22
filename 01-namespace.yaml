@@ -7,3 +7,5 @@ metadata:
     component: dev
   annotations:
     weburl: "https://journalfinder.elsevier.com/"
+
+#kubectl get namespace -n elsevier

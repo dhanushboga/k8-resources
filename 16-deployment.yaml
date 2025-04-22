@@ -47,3 +47,10 @@ spec:
     port: 80 # service port
     targetPort: 80
     nodePort: 30007
+
+
+
+#kubectl rollout undo deployment/nginx --to-revision=2
+#kubectl rollout history deployment --revision=1
+#kubectl rollout history deployment
+#kubectl rollout status deployment/nginx
