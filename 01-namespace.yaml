@@ -21,7 +21,7 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: elsevier-pod
-  Namespace: elsevier
+  namespace: elsevier
   labels:
     environment: dev
     project: elsevier
