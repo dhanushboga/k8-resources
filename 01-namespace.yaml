@@ -16,19 +16,6 @@ metadata:
   annotations:
     weburl: "https://journalfinder.elsevier.com/"
 
----
-kind: Pod
-apiVersion: v1
-metadata:
-  name: elsevier-pod
-  namespace: elsevier
-  labels:
-    environment: dev
-    project: elsevier
-   
-spec:
-  containers:
-  - name: nginx
-    image: nginx
+
   
   
