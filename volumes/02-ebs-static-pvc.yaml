@@ -22,7 +22,7 @@ metadata:
     purpose: "ebs-static-demo"
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1a # kubectl get nodes --show-labels
+    topology.kubernetes.io/zone: us-east-1b # kubectl get nodes --show-labels
   containers:
   - name: nginx
     image: nginx
