@@ -12,7 +12,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: fs-0815ef027cea705aa
+    volumeHandle: fs-0b485b1a311f86034
 
 
 # kubectl apply -k \
