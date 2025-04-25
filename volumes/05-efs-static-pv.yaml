@@ -12,4 +12,8 @@ spec:
   persistentvolumeReclaimPolicy: Retain
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: 
+    volumeHandle: fs-0815ef027cea705aa
+
+
+# kubectl apply -k \
+#     "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-2.1"
