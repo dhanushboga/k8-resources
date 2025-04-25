@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: ebs-static
+  name: ebs-static-pvc
 spec:
   storageClassName: "" # Empty string must be explicitly set otherwise default StorageClass will be set
   # pv name
-  volumeName: ebs-static
+  volumeName: ebs-static-pv
   accessModes:
     - ReadWriteOnce
   resources:
@@ -17,7 +17,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ebs-static
+  name: ebs-static-pod
   labels:
     purpose: "ebs-static-demo"
 spec:
@@ -32,7 +32,7 @@ spec:
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
-      claimName: ebs-static
+      claimName: ebs-static-pvc
 
 ---
 
