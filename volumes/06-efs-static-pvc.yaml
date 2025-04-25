@@ -8,7 +8,6 @@ spec:
   volumeName: efs-static-pv
   accessModes:
     - ReadWriteOnce
-  storageClassName: ""
   resources:
     requests:
       storage: 5Gi
