@@ -4,9 +4,23 @@ metadata:
    name: nginx
    labels:
     component: dev
-
 spec:
   containers:
   - name: nginx
     image: nginx
  
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-pod
+spec:
+  type: NodePort
+  selector:  #labels are used as selectors
+    component: dev
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30005
